@@ -18,8 +18,8 @@
     <string name="value_cannot_be_negative">Value cannot be negative</string>
 
     <string name="select_data_to_save">Kindly select data you want to save</string>
-    <string name="saved">Saved</string>
-    <string name="saved_data_loaded">Saved data loaded</string>
+    <string name="saved_successfully">Saved successfully</string>
+    <string name="saved_data_loaded_successfully">Saved data loaded successfully</string>
     <string name="reset_completed">Reset completed</string>
 
     <string name="set_completed">Set completed</string>
