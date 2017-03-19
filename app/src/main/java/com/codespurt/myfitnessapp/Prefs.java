@@ -12,7 +12,7 @@ public class Prefs {
 
     private String SETS = "sets";
     private String REPEAT = "repeat";
-    private String TIMER = "timer";
+    private String REST_TIMER = "rest_timer";
 
     public Prefs(Context context) {
         this.context = context;
@@ -48,11 +48,11 @@ public class Prefs {
     // timer
     public void setTimer(String timer) {
         editor = sharedPreferences.edit();
-        editor.putString(TIMER, timer);
+        editor.putString(REST_TIMER, timer);
         editor.apply();
     }
 
     public String getTimer() {
-        return sharedPreferences.getString(TIMER, "0");
+        return sharedPreferences.getString(REST_TIMER, "0");
     }
 }

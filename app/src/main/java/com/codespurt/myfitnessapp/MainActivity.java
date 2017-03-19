@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        WorkoutDetailFragment exampleFragment = new WorkoutDetailFragment();
-        fragmentTransaction.add(R.id.fragment_container, exampleFragment);
+        WorkoutDetailFragment workoutDetailFragment = new WorkoutDetailFragment();
+        fragmentTransaction.add(R.id.fragment_container, workoutDetailFragment);
         fragmentTransaction.commit();
     }
 
