@@ -36,7 +36,7 @@ public class WorkoutDetailFragment extends Fragment implements View.OnClickListe
     private ImageView repeat_plus, repeat_minus;
     private TextView repeat_counter;
 
-    // timer
+    // rest timer
     private ImageView timer_plus, timer_minus;
     private TextView timer_counter;
 
@@ -155,7 +155,7 @@ public class WorkoutDetailFragment extends Fragment implements View.OnClickListe
                     prefs.setSets(String.valueOf(setCounter));
                     prefs.setRepeat(String.valueOf(repeatCounter));
                     prefs.setTimer(String.valueOf(timerCounter));
-                    showToast(getResources().getString(R.string.saved));
+                    showToast(getResources().getString(R.string.saved_successfully));
                 }
                 break;
             case R.id.btn_reset:
@@ -166,9 +166,7 @@ public class WorkoutDetailFragment extends Fragment implements View.OnClickListe
                 sets_counter.setText(String.valueOf(setCounter));
                 repeat_counter.setText(String.valueOf(repeatCounter));
                 timer_counter.setText(String.valueOf(timerCounter));
-                showToast(getResources().getString(R.string.reset_completed));
                 break;
-
         }
     }
 
@@ -218,7 +216,7 @@ public class WorkoutDetailFragment extends Fragment implements View.OnClickListe
             sets_counter.setText(String.valueOf(setCounter));
             repeat_counter.setText(String.valueOf(repeatCounter));
             timer_counter.setText(String.valueOf(timerCounter));
-            showToast(getResources().getString(R.string.saved_data_loaded));
+            showToast(getResources().getString(R.string.saved_data_loaded_successfully));
         }
     }
 
@@ -284,7 +282,6 @@ public class WorkoutDetailFragment extends Fragment implements View.OnClickListe
             repeat_counter.setText(String.valueOf(getResources().getString(R.string.default_start_value)));
             showToast(getResources().getString(R.string.workout_completed));
             stopTimers();
-            playSound();
             playSound();
         }
     }
