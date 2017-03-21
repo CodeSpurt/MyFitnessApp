@@ -1,6 +1,6 @@
 This app is for 'Fitness Tracking' purposes.<br />
 
-<b>Direct link to app:</b> http://bit.ly/2nzUDM3<br /><br />
+<b>Direct link to app:</b> http://bit.ly/2nzUDM3<br />
 
 See the screenshots below:<br />
 
